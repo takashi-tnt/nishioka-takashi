@@ -12,16 +12,16 @@ public class Task3 {
 		System.out.println(doubleNum);
 		System.out.println(longNum);
 
-		long x = (long)intNum;
-		float y = (float)doubleNum;
-		double z = (double)longNum;
+		long long_intNum = intNum;
+		float float_doubleNum = (float)doubleNum;
+		double double_longNum = (double)longNum;
 
 
 
 		System.out.println("変換後");
-		System.out.println(x);
-		System.out.println(y);
-		System.out.println(z);
+		System.out.println(long_intNum);
+		System.out.println(float_doubleNum);
+		System.out.println(double_longNum);
 
 
 
