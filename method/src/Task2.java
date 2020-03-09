@@ -7,8 +7,7 @@ public class Task2 {
 
 	}
 	public static String getTriangleArea(double bottom_line, double height){
-		double area = ((double)Math.round((bottom_line * height / 2)*10)) /10;
-		return "三角形の面積" + "\n" + area;
+		return "三角形の面積" + "\n" + (double)Math.round(bottom_line * height / 2);
 	}
 
 }
