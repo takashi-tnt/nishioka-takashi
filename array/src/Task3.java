@@ -6,18 +6,18 @@ public class Task3 {
 		System.out.print("[");
 		Random r = new Random();
 
-		for (int index=0; index <=5 ; index++) {
+		for (int index =0 ; index <= 5 ; index ++) {
 			array[index] = r.nextInt(10);
-			if (index<5) {
+			if (index < 5) {
 				System.out.print(array[index] + ", ");
 			}
-			if (index==5) {
+			if (index == 5) {
 				System.out.println(array[index] + "]");
 			}
 		}
 		int max = array[0];
 		int min = array[0];
-		for(int index=0; index<=5; index++) {
+		for(int index =0 ; index <= 5; index ++) {
 			 int v = array[index];
 			    if (v > max) {
 			        max = v;
