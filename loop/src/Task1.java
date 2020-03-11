@@ -9,13 +9,13 @@ public class Task1 {
 		scan.close();
 
 		int sum = 0;
-		if (num >=1) {
+
 		for (int i=1; i<=num;i++) {
 			sum = sum + i;
 		}
 
 		System.out.println("1～" + num + "までの数字の和: " + sum);
-		}
+
 
 
 

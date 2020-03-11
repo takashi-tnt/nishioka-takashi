@@ -7,13 +7,13 @@ public class Task4 {
 		Scanner scan = new Scanner(System.in);
 		int num = scan.nextInt();
 		scan.close();
-		if (num>0) {
+		if (num > 0) {
 			System.out.print(num + "の約数: ");
-			for(int i=1; i<=num; i++) {
-				if(i< num && num % i ==0) {
-					System.out.print(i+ ", ");
+			for(int i = 1; i <= num; i ++) {
+				if(i < num && num % i == 0) {
+					System.out.print(i + ", ");
 				}
-				if (i==num) {
+				if (i == num) {
 					System.out.print(i);
 				}
 

@@ -9,23 +9,18 @@ public class Task2 {
 		scan.close();
 
 		int sum = 0;
-		if (num >=1) {
-		for (int i=1; i<=num;i++) {
-			sum = sum + i;
-			if (i ==1){
-			System.out.print(i);
-			}else if (i > 1 && i < num) {
-				System.out.print(" + ");
+		if (num >= 1) {
+			for (int i = 1; i <= num; i ++) {
+				sum = sum + i;
+
+				if (i == 1){
 				System.out.print(i);
-			}else {
-				System.out.print(" + ");
-				System.out.print(i);
-				System.out.print(" = ");
-			}
+
+				}else {
+					System.out.print(" + " +  i);
+				}
 		}
-
-		System.out.print(sum);
-
+			System.out.print(" = "+ sum);
 	    }
 	}
 
