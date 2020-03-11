@@ -7,9 +7,11 @@ public class Task4 {
 
 		System.out.println("--配列にnullがない場合--");
 		System.out.println(nullCheck(array1));
+		System.out.println(nullCheckB(array1));
 
 		System.out.println("--配列にnullがある場合--");
 		System.out.println(nullCheck(array2));
+		System.out.println(nullCheckB(array2));
 
 
 	}
@@ -21,6 +23,21 @@ public class Task4 {
 		}
 
 
+
+	}
+	public static boolean nullCheckB(String[] array) {
+		int content_null = 0;
+		for(int i = 0; i <= array.length - 1; i ++) {
+			if(array[i] == null) {
+				content_null = 1;
+				break;
+			}
+		}
+		if(content_null == 0) {
+			return false;
+		}else {
+			return true;
+		}
 	}
 
 }
