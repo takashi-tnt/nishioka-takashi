@@ -8,7 +8,7 @@ public class Task3 {
 		System.out.println(num);
 		if (num == 0) {
 			System.out.println("入力された値は0です。");
-		}else if(num >0) {
+		}else if(num > 0) {
 			System.out.println("入力された値は正の数です。");
 		}else {
 			System.out.println("入力された値は負の数です。");

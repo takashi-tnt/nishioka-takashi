@@ -13,14 +13,16 @@ public class Task4 {
 		System.out.println("numB :" + numB);
 
 		//条件分岐
-		if (numA <= 0 || numB <=0) {
-			System.out.println("正の数を入力してください");
-		}else if (numA % numB ==0) {
-			System.out.println("numBはnumAの約数です。");
-		}else if (numA % numB !=0) {
+		if (numA > 0 && numB > 0) {
+			if (numA % numB == 0) {
+				System.out.println("numBはnumAの約数です。");
+			}else if (numA % numB != 0) {
 			System.out.println("numBはnumAの約数ではありません。");
+			}
+		}else{
+			System.out.println("正の数を入力してください");
 		}
-
 	}
+
 
 }

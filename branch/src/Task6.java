@@ -23,6 +23,27 @@ public class Task6 {
 		}
 		//結果の出力
 		System.out.println(number + " ->" + output);
+		switch(number) {
+			case 1:
+				output = "Ⅰ";
+				break;
+			case 2:
+				output = "Ⅱ";
+				break;
+			case 3:
+				output = "Ⅲ";
+				break;
+			case 4:
+				output = "Ⅳ";
+				break;
+			case 5:
+				output = "Ⅴ";
+				break;
+			default:
+				output = "unknown";
+
+		}
+		System.out.println(number + " ->" + output);
 
 
 

@@ -13,17 +13,15 @@ public class Task5 {
 		System.out.println("numB: " + numB);
 		System.out.println("numC: " + numC);
 
-		int max = 0; //変数の初期値
+		int max = numA; //変数の初期値
 		//条件分岐
-		if(numA > numB && numA > numC) {
-			max = numA;
-		}
-		if(numB > numA && numB >numC) {
+		if(max < numB){
 			max = numB;
 		}
-		if(numC > numA && numC > numA) {
+		if(max < numC) {
 			max = numC;
 		}
+
 
 
 		System.out.println("最大値: " + max);

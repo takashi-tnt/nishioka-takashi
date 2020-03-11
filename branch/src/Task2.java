@@ -10,8 +10,7 @@ public class Task2 {
 		if (number >= 10){
 			System.out.println(number);
 			System.out.println("値: " + number);
-		}
-		if (number<10 && number >0) {
+		}else{
 			System.out.println(number);
 			System.out.println("値: " + 0 +number);
 		}
