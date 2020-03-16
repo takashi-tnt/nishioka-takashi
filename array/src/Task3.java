@@ -5,7 +5,6 @@ public class Task3 {
 		int[] array= new int[6];
 		System.out.print("[");
 		Random r = new Random();
-
 		for (int index =0 ; index <= 5 ; index ++) {
 			array[index] = r.nextInt(10);
 			if (index < 5) {
@@ -18,12 +17,12 @@ public class Task3 {
 		int max = array[0];
 		int min = array[0];
 		for(int index =0 ; index <= 5; index ++) {
-			 int v = array[index];
-			    if (v > max) {
-			        max = v;
+			 int number = array[index];
+			    if (number > max) {
+			        max = number;
 			    }
-			    if (v < min) {
-			        min = v;
+			    if (number < min) {
+			        min = number;
 			    }
 		}
 		System.out.println("最大値: " + max);

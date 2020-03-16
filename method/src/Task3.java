@@ -3,16 +3,16 @@ public class Task3 {
 
 	public static void main(String[] args) {
 		System.out.println("--①文字列だけの場合---");
-		String string_add = add("西", "隆志");
-		System.out.println(string_add);
+		String stringAdd = add("西", "隆志");
+		System.out.println(stringAdd);
 
 		System.out.println("---②整数だけの場合---");
-		int int_add = add(1,2);
-		System.out.println(int_add);
+		int intAdd = add(1, 2);
+		System.out.println(intAdd);
 
 		System.out.println("---③小数だけの場合---");
-		double double_add = add(1.5,3.4);
-		System.out.println(double_add);
+		double doubleAdd = add(1.5, 3.4);
+		System.out.println(doubleAdd);
 
 
 	}
