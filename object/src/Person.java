@@ -12,18 +12,21 @@ public class Person {
 	public void setAge(int age){
 		this.age = age;
 	}
+	//静的フィールドの生成
 	static int wallet = 0;
+	//コンストラクタ、nameとage
 	Person(String name, int age){
 		this.name = name;
 		this.age = age;
 
 	}
+	//コンストラクタ、静的フィールド
 	Person(int price){
 		this.wallet = this.wallet + price;
 
 	}
 
-
+	//myProfileメソッドの定義
 	public void myProfile() {
 		System.out.println("私の名前は" + this.name + "です。");
 		System.out.println("年齢は" + this.age + "才です。");
