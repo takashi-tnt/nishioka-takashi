@@ -7,11 +7,11 @@ public class Task3 {
 		System.out.println(text);
 
 		//逆文字列の生成、出力
-		String reverse_text = "";
 		for (int i = text.length() - 1 ; i >= 0  ;i --) {
-			reverse_text = reverse_text + text.charAt(i);
+			System.out.print(text.charAt(i));
 		}
-		System.out.println(reverse_text);
+
+
 
 	}
 
