@@ -7,7 +7,9 @@ public class Main{
 		System.out.println(Person.wallet);
 
 		Person hoge1 = new Person(1000);
+		System.out.println(hoge1.wallet);
 		Person hoge2 = new Person(2000);
+		System.out.println(hoge2.wallet);
 
 		System.out.println(hoge1.wallet);
 		System.out.println(hoge2.wallet);
