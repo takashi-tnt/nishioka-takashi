@@ -18,27 +18,21 @@ public class Task7 {
 		String day = scan.nextLine();
 		scan.close();
 		//入力の表示
-
 		System.out.println(day);
 
-		int day_number = 0;
-
-		if (day.equals(MONDAY)||day.equals(TUESDAY)||day.equals(WEDNESDAY)||day.equals(THURSDAY)||day.equals(FRIDAY)) {
-			day_number = 1;
-		}else if(day.equals(SATURDAY)){
-			day_number = 2;
-		}else if(day.equals(SUNDAY)) {
-			day_number = 3;
-		}
 		//出力の条件分岐
-		switch(day_number) {
-			case 1:
+		switch(day) {
+			case "月曜":
+			case "火曜":
+			case "水曜":
+			case "木曜":
+			case "金曜":
 				System.out.println("午前診療と午後診療があります。");
 				break;
-			case 2:
+			case "土曜":
 				System.out.println("土曜は午前診療のみです。");
 				break;
-			case 3:
+			case "日曜":
 				System.out.println("日曜は休診です。");
 				break;
 			default:
