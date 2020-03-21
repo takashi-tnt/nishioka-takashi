@@ -6,6 +6,7 @@
     String s = f.format(now);
 
     %>
+    <% //調べてみて作ったもの%>
     <%
     String strCnt = (String) (application.getAttribute("cnt"));
     if(strCnt==null){
@@ -14,6 +15,13 @@
     strCnt=Integer.toString(Integer.parseInt(strCnt)+1);
     }
     application.setAttribute("cnt",strCnt);
+    %>
+    <%//static,静的フィールドを使う場合 %>
+    <%!
+    static int count;
+    %>
+    <%
+    count = count + 1;
     %>
 
 
@@ -32,7 +40,7 @@
 
 
 <h1>本日の訪問回数:<%= strCnt %></h1>
-
+<h1>本日の訪問回数:<%= count %></h1>
 <p>今日の日付: <%= s %></p>
 
 
