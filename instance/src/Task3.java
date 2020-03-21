@@ -6,10 +6,6 @@ public class Task3 {
 		person.name = "西岡　隆志";
 		person.age = 26;
 		person.myProfile();
-
-
-
-
 	}
 
 }
