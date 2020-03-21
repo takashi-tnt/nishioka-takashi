@@ -2,7 +2,8 @@
 public class Task5 {
 
 	public static void main(String[] args) {
-		int kuku = 0;
+		int kuku = 0;//掛け算の積を代入するための変数
+		//二重ループ処理
 		for(int j = 1; j <= 9; j ++) {
 			for(int i = 1; i <= 9; i ++) {
 				kuku = j * i;
@@ -12,8 +13,8 @@ public class Task5 {
 				if (String.valueOf(kuku).length() == 2) {
 					System.out.print(" " + kuku);
 				}
-				}
-			System.out.println();
+			}
+		System.out.println();
 		}
 
 	}
