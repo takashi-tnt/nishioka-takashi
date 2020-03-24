@@ -7,15 +7,15 @@
 <title>JSP TASK</title>
 </head>
 <body>
-<p>
+<h1>
 <% out.print("125 - 15 = "); %>
 <%= substraction(125, 15) %>
-</p>
+</h1>
 
-<p>
+<h1>
 <% out.print("17 - 21 = "); %>
 <%= substraction(17, 21) %>
-</p>
+</h1>
 
 <%! int substraction(int number1, int number2){
 	return number1 - number2;
