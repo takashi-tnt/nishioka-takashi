@@ -6,7 +6,7 @@
     String s = f.format(now);
 
     %>
-    <% //調べてみて作ったもの%>
+    <% //調べてみて作ったもの,そのままコピーしてできたもの%>
     <%
     String strCnt = (String) (application.getAttribute("cnt"));
     if(strCnt==null){

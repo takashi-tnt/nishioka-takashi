@@ -7,6 +7,7 @@
 <title>JSP TASK</title>
 </head>
 <body>
+
 <h1>
 <% out.print("125 - 15 = "); %>
 <%= substraction(125, 15) %>
