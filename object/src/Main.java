@@ -25,7 +25,7 @@ public class Main{
 		System.out.println("体重:" + dog.weight + "kg");
 		dog.run(dog.name);
 		dog.sleep();
-		dog.sleep(dog.name);
+
 
 
 	}

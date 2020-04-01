@@ -14,8 +14,9 @@ public class Dog extends Animal{
 		System.out.println(name + "は走った");
 	}
 	//sleepメソッド
-	public void sleep(String name) {
-		System.out.println(name + "は眠った");
+	public void sleep() {
+		System.out.println("眠った");
+		System.out.println(this.name + "は眠った");
 	}
 
 
