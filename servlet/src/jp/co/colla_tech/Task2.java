@@ -22,7 +22,7 @@ public class Task2 extends HttpServlet {
      */
     public Task2() {
         super();
-        // TODO Auto-generated constructor stub
+
     }
 
 	/**
@@ -30,10 +30,10 @@ public class Task2 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Date now = new Date();
-	    SimpleDateFormat f =new SimpleDateFormat("yyyy年MM月dd日");
-	    String s = f.format(now);
+	    SimpleDateFormat today =new SimpleDateFormat("yyyy年MM月dd日");
+	    String nowDay = today.format(now);
 		response.setContentType("text/html; charset = UTF-8");
-		response.getWriter().append("<h1>今日の日付: " + s + "</h1>");
+		response.getWriter().append("<h1>今日の日付: " + nowDay + "</h1>");
 	}
 
 	/**
