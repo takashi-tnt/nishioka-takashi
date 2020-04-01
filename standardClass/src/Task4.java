@@ -3,6 +3,7 @@ public class Task4 {
 
 	public static void main(String[] args) {
 		String str ="ABCDGOPQRSYZ";
+		System.out.print("探したい文字: ");
 		//標準入力
 		Scanner scan = new Scanner(System.in);
 		String text = scan.next();
