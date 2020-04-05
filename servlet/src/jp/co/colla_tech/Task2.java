@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Task2
  */
-@WebServlet("/ServletKadai2")
+@WebServlet("/Task2")
 public class Task2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

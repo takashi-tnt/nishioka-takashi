@@ -29,7 +29,7 @@ public class Task1 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html; charset = UTF-8");
 		response.getWriter().append("<h1>Hello Servlet</h1>");
-		response.getWriter().append("<p>初めてのServlet</p>");
+		response.getWriter().append("<p>初めてのサーブレット</p>");
 	}
 
 	/**

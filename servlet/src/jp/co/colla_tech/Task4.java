@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Task4
  */
-@WebServlet("/ServletKadai3")
+@WebServlet("/Task4")
 public class Task4 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
