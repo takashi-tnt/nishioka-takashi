@@ -41,24 +41,18 @@ public class SessionCount extends HttpServlet {
 
 	    HttpSession session = request.getSession(false);
 	    if(session == null) {
-	    	out.println("<p>初回の訪問です。</p>");
+	    	out.println("<p>初めての訪問です。</p>");
 	    	session = request.getSession(true);
 	    	session.setAttribute("visited", "1");
 	    }else {
 	    	String visitedStr =(String)session.getAttribute("visited");
+	    	out.println("<p>" + visitedStr + "</p>");
 	    	int visited = Integer.parseInt(visitedStr);
 	    	visited ++;
 	    	out.println("<p>" + visited + "回目の訪問です</p>");
 
 	    	session.setAttribute("visited", Integer.toString(visited));
 	    }
-
-
-
-
-
-
-
 
 	    out.println("<a href='/dataOperation/SessionCount'>画面を再訪問</a>");
 
@@ -81,7 +75,6 @@ public class SessionCount extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 

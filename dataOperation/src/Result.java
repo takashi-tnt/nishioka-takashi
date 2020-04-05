@@ -28,14 +28,26 @@ public class Result extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		String name =request.getParameter("txt") ;
+		String name =request.getParameter("name") ;
 		String checkboxSex = request.getParameter("sex");
 		String contactBox = request.getParameter("contact");
 		String contactReview = request.getParameter("contactReview");
+		//データベースがないので条件分岐にて対応
+		switch(contactBox) {
+			case "product":
+				contactBox = "製品について";
+				break;
+			case "clame":
+				contactBox = "不具合やクレーム";
+				break;
+			case "support":
+				contactBox = "アフターサポート";
+				break;
+		}
 		response.setContentType("text/html; charset = UTF-8");
 		response.getWriter().append("<p>以下の内容でお問い合わせいたしました。回答をお待ちください。</p>");
-		response.getWriter().append("<p>名前" + name + "</p>");
-		response.getWriter().append("<p>性別" + checkboxSex + "</p>");
+		response.getWriter().append("<p>名前:" + name + "</p>");
+		response.getWriter().append("<p>性別:" + checkboxSex + "</p>");
 		response.getWriter().append("<p>お問い合わせ種類:" + contactBox + "</p>");
 		response.getWriter().append("<p>お問い合わせ内容:" + contactReview + "</p>");
 	}
