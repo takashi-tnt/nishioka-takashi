@@ -1,5 +1,5 @@
 package jp.co.colla_tech;
-
+//仕様に記載されてはいないが、カリキュラムのほうにはこの設定で組むように書かれているので今回は使わせていただいた。
 import java.io.IOException;
 import java.io.PrintWriter;
 
