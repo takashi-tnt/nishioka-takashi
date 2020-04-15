@@ -20,10 +20,12 @@ public class Main{
 
 		//課題5の出力
 		Dog dog = new Dog("ポチ", 5, 12.3);
+		Animal dog2 = new Animal();
 		System.out.println("名前:" + dog.name);
 		System.out.println("年齢:" + dog.age + "歳");
 		System.out.println("体重:" + dog.weight + "kg");
 		dog.run(dog.name);
+		dog2.sleep();
 		dog.sleep();
 
 

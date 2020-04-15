@@ -29,6 +29,8 @@ public class Person {
 	//コンストラクタ、静的フィールド
 	Person(int price){
 		this.wallet = this.wallet + price;
+	}
+	Person(){
 
 	}
 
