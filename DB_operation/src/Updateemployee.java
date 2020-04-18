@@ -38,16 +38,13 @@ public class Updateemployee extends HttpServlet {
 		Connection con = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/task1", "root", "");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/task1", "tnt", "tnt");
 			String sql = "UPDATE employee SET name = ? WHERE id = ?";
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, name);
 			ps.setInt(2, id);
 			int result = ps.executeUpdate();
 			System.out.println(result + "行更新");
-
-
-
 			ps.close();
 		} catch (SQLException e) {
 			e.printStackTrace();

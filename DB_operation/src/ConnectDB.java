@@ -8,11 +8,10 @@ public class ConnectDB {
 		Connection con = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/task1", "root", "");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/task1", "tnt", "tnt");
 			if (con != null) {
 				System.out.println("DB接続が成功しました");
 			}
-
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}catch(ClassNotFoundException e){

@@ -40,7 +40,7 @@ public class Search extends HttpServlet {
 		Connection con = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/task1", "root", "");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/task1", "tnt", "tnt");
 			String sql = "SELECT * FROM employee WHERE name LIKE ?";
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, "%" + name + "%");

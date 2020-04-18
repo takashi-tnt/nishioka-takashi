@@ -37,7 +37,7 @@ public class Deleteemployee extends HttpServlet {
 		Connection con = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/task1", "root", "");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/task1", "tnt", "tnt");
 			String sql = "DELETE FROM employee WHERE id = ?";
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setInt(1, id);

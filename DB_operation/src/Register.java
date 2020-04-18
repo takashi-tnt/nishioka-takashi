@@ -40,10 +40,6 @@ public class Register extends HttpServlet {
 		response.getWriter().append("<p>ID:" + id + "</p>");
 		response.getWriter().append("<p>birthday:" + birthday + "</p>");
 		response.getWriter().append("<p>年齢:" + age + "</p>");
-
-
-
-
 		Connection con = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -56,9 +52,6 @@ public class Register extends HttpServlet {
 			ps.setInt(4, age);
 			int result = ps.executeUpdate();
 			System.out.println(result + "行追加");
-
-
-
 			ps.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
